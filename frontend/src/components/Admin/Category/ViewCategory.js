@@ -21,8 +21,7 @@ function ViewCategory() {
        refresh();
     }, [])
 
-
-
+    
     const refresh=()=>{
         getCategory().then((res) => {
             const categoryresult = res.data;

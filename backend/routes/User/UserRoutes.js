@@ -7,6 +7,4 @@ router.get('/getall',getAll)
 router.post('/getuserdata',GetUser)
 
 
-
-
 module.exports=router;

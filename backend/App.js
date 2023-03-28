@@ -14,9 +14,10 @@ app.use(cors());
  app.use("/api/posts",productRoute)
  const UserRoutes=require('./routes/User/UserRoutes');
  app.use("/api/posts",UserRoutes)
+ const DashboardRoutes=require('./routes/Dashboard/DashboardRoutes');
+ app.use("/api/posts",DashboardRoutes)
  app.use(express.static('./'));
  
-
 connectDB()
 httpServer.listen(PORT,(err)=>{
     if(err) throw err

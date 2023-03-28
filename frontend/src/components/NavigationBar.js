@@ -7,7 +7,8 @@ function navigationBar() {
   const logout=(e)=>{
     e.preventDefault();
     alert('You have Successfully Logout from this device.')
-    localStorage.clear();
+    localStorage.removeItem("_token")
+    localStorage.setItem('isLogged',false)
     
 }
  
@@ -30,6 +31,7 @@ function navigationBar() {
         // style={{ maxHeight: '100px',marginLeft:'250px' }}
         navbarScroll
       >
+       
           </Nav>   
           <Dropdown >
   <Dropdown.Toggle variant="outline-secondary" id="dropdown-basic"  style={{height:'40px',width:'100px'}}>

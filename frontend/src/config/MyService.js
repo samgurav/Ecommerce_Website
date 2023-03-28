@@ -33,6 +33,10 @@ export function ProductDetails(data){
     return axios.post(`${MAIN_URL}posts/prodetails`,data);
 }
 
+export function getAllProducts(){
+    return axios.get(`${MAIN_URL}posts/getproducts`);
+}
+
 export function ProductImage(data){
     console.log(data)
     return axios.post(`${MAIN_URL}posts/productimage`,data);

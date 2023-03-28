@@ -8,7 +8,8 @@ function AdminNavbar() {
   const logout=(e)=>{
     e.preventDefault();
     alert('You have Successfully Logout from this device.')
-    localStorage.clear();
+     localStorage.clear();
+   
     navigate("/login",{replace:true})
    
     

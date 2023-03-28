@@ -46,8 +46,8 @@ function AllProducts() {
     const handleShow1 = () => setShow1(true);
     const handleClose2 = () => setShow2(false);
     const handleShow2= () => setShow2(true);
-    const handleClose3 = () => setShow3(false);
-    const handleShow3= () => setShow3(true);
+    // const handleClose3 = () => setShow3(false);
+    // const handleShow3= () => setShow3(true);
    const ProNameInput=useRef(null)
    const proProducerInput=useRef(null)
    const proDesc=useRef(null)
@@ -70,9 +70,7 @@ function AllProducts() {
             const categoryresult = res.data;
             console.log(res.data)
             setProduct(categoryresult)
-            
-           
-         
+ 
         })
       
     }
@@ -86,20 +84,15 @@ function AllProducts() {
             }
             success(res.data.message)
            refresh();
-           
-            
-           
+  
         })  
-     
-
     }
   
     //Update product button function
     const Updateproduct=(productdetails)=>{
         console.log(productdetails)
         setProDetails(productdetails)
-       
- 
+
     }
 
     //error handler
@@ -118,11 +111,9 @@ function AllProducts() {
                 case 'productCost':
                   Errors.productCost= regForCost.test(value)?'':' product cost field accepts only number';
                   break;
-
-                
-
-                 
+    
         }
+
         setSelect({Errors,[name]:value},()=>{
           console.log(Errors)
         })

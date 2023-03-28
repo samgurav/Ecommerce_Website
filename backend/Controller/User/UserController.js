@@ -77,4 +77,7 @@ async function GetUser(req,res){
     
 }
 
+
+
+
 module.exports = {Register,GetUser,getAll}

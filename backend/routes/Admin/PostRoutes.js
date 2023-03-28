@@ -10,5 +10,4 @@ router.post('/delsubcategory',DeleteSubcategory)
 router.post('/editsubcategory',EditSubcategory)
 router.post('/deletecategory',DeleteCategory)
 
-
 module.exports=router;
